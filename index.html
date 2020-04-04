@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de Pandora</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '604456950319658');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=604456950319658&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+    <header></header>
+    <section>
+        <div class="container-like">
+            <img class="img-like" src="like.png" alt="like">
+        </div>
+        <div class="container-go">
+            <h5 class="text-copy">Clique no botão abaixo para continuar</h5>
+            <img class="img-button" src="bt-click.png" alt="continuar" onclick="continuar()">
+        </div>
+    </section>
+    <footer></footer>
+    <script>
+        function continuar() {
+            setTimeout(function () {
+                fbq('track', 'PageViewCP');
+                location.href = 'http://bit.ly/32J8txF';
+    }, 500);
+}
+    </script>
+</body>
+
+</html>
